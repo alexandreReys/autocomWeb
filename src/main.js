@@ -1,12 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import Vue from "vue";
+import App from "./App";
+import store from "./store";
+import router from "./router";
+import "./assets/scss/app.scss";
+import VueMask from "di-vue-mask";
+import VueNumericInput from "vue-numeric-input";
 
-Vue.config.productionTip = false
+Vue.use(VueNumericInput);
+Vue.use(VueMask);
 
-new Vue({
+Vue.config.productionTip = false;
+
+window._Vue = new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
+}).$mount("#app");

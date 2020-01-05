@@ -1,0 +1,1 @@
+export const SET_PRODUTOS = 'PRODUTOS/SET_PRODUTOS'
