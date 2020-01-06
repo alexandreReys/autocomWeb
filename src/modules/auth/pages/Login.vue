@@ -56,7 +56,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .login-page {
   height: 300px;
   display: flex;
