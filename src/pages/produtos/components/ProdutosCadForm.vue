@@ -812,13 +812,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 label {
   margin-bottom: 0;
   margin-left: 5px;
   font-size: 10px;
 }
 .card-buttonSalvar {
-  padding: 0.7rem !important;
+  padding: 0.4rem 0.7rem !important;
 }
 </style>
