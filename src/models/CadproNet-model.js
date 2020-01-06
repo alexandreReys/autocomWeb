@@ -67,12 +67,12 @@ export default class CadproNet {
     this.RPqLote = obj.CadproNetRPqLote || '';
 
     if (obj.CadproNetRPdFab) {
-      let dt = obj.CadproNetRPdFab.toString();
-      this.RPdFab = dt.substr(8,2) +'/'+ dt.substr(5,2) +'/'+ dt.substr(0,4);
+      let dt1 = obj.CadproNetRPdFab.toString();
+      this.RPdFab = dt1.substr(8,2) +'/'+ dt1.substr(5,2) +'/'+ dt1.substr(0,4);
     }
     if (obj.CadproNetRPdVal) {
-      dt = obj.CadproNetRPdVal.toString();
-      this.RPdVal = dt.substr(8,2) +'/'+ dt.substr(5,2) +'/'+ dt.substr(0,4);
+      let dt2 = obj.CadproNetRPdVal.toString();
+      this.RPdVal = dt2.substr(8,2) +'/'+ dt2.substr(5,2) +'/'+ dt2.substr(0,4);
     }
     this.RPcAgreg = obj.CadproNetRPcAgreg || '';
 

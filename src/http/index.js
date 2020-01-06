@@ -7,7 +7,13 @@ Vue.use(VueResource)
 
 const http = Vue.http
 
-http.options.root = 'http://localhost:3000/api/v1/autocom/'
+console.log('process.env.NODE_ENV', process.env.NODE_ENV)
+
+if (process.env.NODE_ENV == 'development') {
+  http.options.root = 'http://localhost:3000/api/v1/autocom/'
+} else {
+  http.options.root = 'https://www.anrsistemas.com/api/v1/autocom/'
+}
 
 http.interceptors.push(interceptors)
 
