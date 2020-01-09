@@ -62,12 +62,12 @@ export default {
   }
 
   .home-links {
-    width: 170%;
+    width: 100%;
     @include flex-center();
     .home-link {
       flex: 0 0 15%;
       margin: 0 10px 50px;
-      padding: 30px 0;
+      padding: 30px 15px;
       transition: 0.4s;
       color: var(--white);
       @include flex-center(true);
